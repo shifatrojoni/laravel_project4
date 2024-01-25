@@ -1,9 +1,13 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+
 use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
+
 
 
 /*
@@ -33,7 +37,7 @@ Route::middleware('auth')->group(function () {
 Route::get('admin/login',[AdminController::class,'login']);
 Route::post('admin/login',[AdminController::class,'store'])->name('adminLogin');
 
-require __DIR__.'/auth.php';
+
 
 
 // Frontend
@@ -46,3 +50,26 @@ Route::get('/blog',[HomeController::class,'blog']);
 Route::get('/contact',[HomeController::class,'contact']);
 Route::get('/service',[HomeController::class,'service']);
 Route::get('/shop',[HomeController::class,'shop']);
+
+
+
+Route::get('findproducts',[SearchController::class, 'Search'] );
+
+
+//Cart
+Route::get('cart', [ProductController::class, 'cart'])->name('cart');
+Route::get('add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('add.to.cart');
+Route::patch('update-cart', [ProductController::class, 'update'])->name('update.cart');
+Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('remove.from.cart');
+
+//Cart
+
+
+
+
+
+
+
+
+require __DIR__.'/auth.php';
+

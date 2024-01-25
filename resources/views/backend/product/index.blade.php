@@ -21,7 +21,13 @@
             <div class="card-body">
               <h5 class="card-title">Datatables</h5>
               <!-- Table with stripped rows -->
+              
               <table class="table datatable">
+                @if(session('success'))
+           <div class="alert alert-success">
+             {{ session('success') }}
+             </div> 
+              @endif
                 <thead>
                   <tr>
                     <th>Id</th>
@@ -55,6 +61,7 @@
                         <a href="/product/edit/{{$item['id']}}" class="btn btn-primary btn-sm" >Edit</a>
                         
                         <a href="/product/delete/{{$item['id']}}" class="btn btn-secondary btn-sm" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                        <p class="btn-holder"><a href="{{ route('add.to.cart', $item->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
                         {{-- <a href="{{route}}">Delete</a> --}}
                     </td>
                   </tr>
