@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\ProductController;
 use App\Http\Controllers\ProfileController;
@@ -65,7 +65,7 @@ Route::delete('remove-from-cart', [ProductController::class, 'remove'])->name('r
 //Cart
 
 
-
+Route::resource('brands', BrandController::class);
 
 
 

@@ -43,7 +43,7 @@ class ProductController extends Controller
                 'photo' => 'mimes:jpg,jpeg,png',
         ]);
 
-        $filename = time().".".$request->photo->extension();
+        $filename = "images/".time().".".$request->photo->extension();
         
         //  echo  $request->photo->extention();
         //  echo "<br>";

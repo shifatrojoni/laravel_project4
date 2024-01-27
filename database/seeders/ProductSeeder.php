@@ -19,7 +19,7 @@ class ProductSeeder extends Seeder
             'name' => 'Nordic Chair 1',
             'description' => 'product description content',
             'image' => 'images/1705983475.png',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '1',
             'availibility' => '1'
@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
             'name' => 'Nordic Chair 2',
             'description' => 'product description content',
             'image' => 'images/1705983045.png',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '1',
             'availibility' => '1'
@@ -37,7 +37,7 @@ class ProductSeeder extends Seeder
             'name' => 'Kruzo Aero Chair 1',
             'description' => 'product description content',
             'image' => 'images/1705982723.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '1',
             'availibility' => '1'
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
             'name' => 'Kruzo Aero Chair 2',
             'description' => 'product description content',
             'image' => 'images/1705982723.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '2',
             'availibility' => '1'
@@ -55,7 +55,7 @@ class ProductSeeder extends Seeder
             'name' => 'Ergonomic Chair 1',
             'description' => 'product description content',
             'image' => 'images/1705983045.png',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '2',
             'availibility' => '1'
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
             'name' => 'Ergonomic Chair 2',
             'description' => 'product description content',
             'image' => 'images/1705983197.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '2',
             'availibility' => '1'
@@ -73,7 +73,7 @@ class ProductSeeder extends Seeder
             'name' => 'White Sofa',
             'description' => 'product description content',
             'image' => 'images/1705983475.png',
-            'tags' => 'Wood',
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '3',
             'availibility' => '1'
@@ -82,7 +82,7 @@ class ProductSeeder extends Seeder
             'name' => 'Black Sofa',
             'description' => 'product description content',
             'image' => 'images/1705982723.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '3',
             'availibility' => '1'
@@ -91,7 +91,7 @@ class ProductSeeder extends Seeder
             'name' => 'Red Table',
             'description' => 'product description content',
             'image' => 'images/1705982723.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '3',
             'availibility' => '1'
@@ -100,7 +100,7 @@ class ProductSeeder extends Seeder
             'name' => 'White Table',
             'description' => 'product description content',
             'image' => 'images/1705983045.png',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '4',
             'availibility' => '1'
@@ -109,7 +109,7 @@ class ProductSeeder extends Seeder
             'name' => 'Pink Relaxing Chair',
             'description' => 'product description content',
             'image' => 'images/1705983197.jpg',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '4',
             'availibility' => '1'
@@ -118,7 +118,7 @@ class ProductSeeder extends Seeder
             'name' => 'Red Relaxing Chair',
             'description' => 'product description content',
             'image' => 'images/1705983475.png',
-            'tags' => "Wood",
+            'tags' => ["Wood"],
             'price' => '100',
             'category_id' => '4',
             'availibility' => '1'
