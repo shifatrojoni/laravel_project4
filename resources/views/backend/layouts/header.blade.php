@@ -24,6 +24,10 @@
           </a>
         </li><!-- End Search Icon-->
 
+        <li class="nav-item">
+          <a href="{{url('cart')}}" class="nav-link nav-icon" >Cart<span class="badge rounded-pill bg-primary p-2 ms-2">{{count(session()->get('cart'))?? '0'}} </span></a>
+        </li>
+
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
