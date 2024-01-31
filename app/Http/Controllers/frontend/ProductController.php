@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -43,6 +44,22 @@ class ProductController extends Controller
           
         session()->put('cart', $cart);
         return redirect()->back()->with('success', 'Product added to cart successfully!');
+    }
+
+    public function checkout(){
+        return view('backend.checkout');
+    }
+
+    public function order(Request $request){
+
+        $order = new Order();
+        $order_data =  $request->all();
+        print_r($order_data);
+        $carts = session('cart');
+        print_r($carts);
+        $order_data['coupon'] = '100' ;
+        $order_data['shipping_id'] = '15' ;
+         $order->fill($order_data);
     }
   
     /**
